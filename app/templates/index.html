@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Media Converter</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Video Converter Block -->
+        <div class="block">
+            <h1>Video Converter</h1>
+            <form id="uploadForm">
+                <label for="fileInput">Select a Video File:</label>
+                <input type="file" id="fileInput" name="file" accept="video/*" required>
+                <button type="submit" class="primary-button">Upload</button>
+            </form>
+            
+            <div id="previewSection" style="display:none;">
+                <h2>Preview</h2>
+                <video id="videoPreview" controls></video>
+                
+                <div class="conversion-controls">
+                    <label for="formatSelect">Output Format:</label>
+                    <select id="formatSelect">
+                        <option value="mp4">MP4</option>
+                        <option value="avi">AVI</option>
+                        <option value="mov">MOV</option>
+                        <option value="m4v">M4V</option>
+                        <option value="mpg">MPG</option>
+                    </select>
+                    <button id="convertBtn" class="primary-button">Convert Video</button>
+                </div>
+            </div>
+            
+            <div id="resultSection" style="display:none;">
+                <a id="downloadLink" class="download-link" href="#">Download Converted File</a>
+            </div>
+        </div>
+
+        <!-- Text to Speech Block -->
+        <div class="block">
+            <h1>Generate Audio from Text</h1>
+            <form id="textToSpeechForm">
+                <label for="textInput">Enter Text:</label>
+                <textarea id="textInput" rows="6" placeholder="Enter your text here..."></textarea>
+                
+                <label for="languageSelect">Language:</label>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="it">Italian</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+                <button type="submit" class="primary-button">Generate Audio</button>
+            </form>
+            
+            <div id="audioResultSection" style="display:none;">
+                <a id="audioDownloadLink" class="download-link" href="#">Download Audio</a>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

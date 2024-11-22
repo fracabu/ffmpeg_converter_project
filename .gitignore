@@ -1,0 +1,44 @@
+venv/ 
+# Escludi l'ambiente virtuale
+venv/
+
+# Escludi i file temporanei o compilati di Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Escludi le directory specifiche del progetto
+uploads/
+converted/
+
+# Escludi file di configurazione o segreti
+*.env
+.env
+*.log
+
+# Escludi file di sistema e cache
+.DS_Store
+Thumbs.db
+.cache/
+
+# Escludi configurazioni di editor
+.vscode/
+.idea/
+
+# Escludi backup o file temporanei creati da editor
+*~
+*.swp
+*.bak
+
+# Escludi output di debugging
+*.tmp
+*.out
+
+# Escludi specifici di FFMPEG (opzionale, se crei file temporanei con FFMPEG)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+*.ogg
