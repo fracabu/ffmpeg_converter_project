@@ -1,6 +1,3 @@
-Ecco una descrizione del tuo progetto basata sul codice fornito. Ti fornisco il contenuto per un file `README.md` aggiornato e specifico per le funzionalità presenti.
-
----
 
 ## FFMPEG Converter and Audio Generator
 
